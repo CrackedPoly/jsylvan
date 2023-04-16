@@ -35,8 +35,6 @@ Java_jsylvan_MCFile_fromFile(JNIEnv *env, jclass cl, jstring filename)
 
     (*env)->ReleaseStringUTFChars(env, filename, fname);
 
-    LACE_ME;
-
     /* Read domain data */
     int vectorsize;
     if (fread(&vectorsize, sizeof(int), 1, f) != 1) Abort("Invalid input file!\n");

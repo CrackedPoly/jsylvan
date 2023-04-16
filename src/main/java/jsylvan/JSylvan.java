@@ -189,8 +189,9 @@ public class JSylvan
 
     /**
      * Given an array of BDDs, compute their disjunction/union in parallel.
+     * Disabled.
      */
-    public static native long makeUnionPar(long[] bdds);
+    // public static native long makeUnionPar(long[] bdds);
 
     /**
      * Compute the constrain or general cofactor of f @ c.
